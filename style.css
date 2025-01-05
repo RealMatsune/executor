@@ -59,9 +59,14 @@ body {
 	margin-bottom: 10px;
   }
   
-  .status {
-	color: #2ecc71;
-	font-weight: bold;
+  .status1 {
+	color: #32db14;
+	font-weight: normal;
+  }
+  
+  .status2 {
+	color: #f20707;
+	font-weight: normal;
   }
   
   .btn {
