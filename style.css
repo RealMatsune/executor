@@ -68,7 +68,12 @@ body {
 	color: #f20707;
 	font-weight: normal;
   }
-  
+
+ .status3 {
+       color: #fff700;
+       font-weight: normal;
+  }
+
   .btn {
 	padding: 10px 20px;
 	margin: 5px;
