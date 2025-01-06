@@ -50,7 +50,7 @@ body {
   
   h1 {
 	font-size: 2.5em;
-	color: #b0f50f;
+	color: #8ebd22;
 	margin-bottom: 20px;
   }
 
@@ -84,9 +84,14 @@ body {
   }
   
   .btn.download {
-	background-color: #b0f50f;
+	background-color: #8ebd22;
 	color: #fff;
   }
+
+ .btn.Videos {
+	background-color: #8ebd22;
+	color: #fff;
+  }  
   
   .btn.update {
 	background-color: #555;
