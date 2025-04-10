@@ -3,52 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MATSUNE EXECUTOR</title>
+  <title>Matsune Executor</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="favicon.png">
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body class="bg-gradient-to-br from-gray-900 to-black text-white min-h-screen font-sans">
 
-  <div class="container mx-auto px-4 py-8">
-    <h1 class="text-4xl font-bold text-center mb-8 text-cyan-400">⚔️ MATSUNE EXECUTOR</h1>
-
-    <div class="flex justify-center mb-10">
-      <input type="text" id="search-input" placeholder="Search executors..." 
-             class="w-full md:w-1/2 px-4 py-2 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-cyan-400" />
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="card-container">
-      <!-- Sample card -->
-      <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transition hover:scale-105 duration-300">
-        <img src="Fluxus.png" alt="Fluxus" class="w-full h-40 object-cover">
-        <div class="p-4">
-          <h2 class="text-xl font-semibold mb-2">Fluxus</h2>
-          <p class="mb-2">Status: <span class="text-green-400 font-bold">Working</span></p>
-          <div class="space-y-2">
-            <a href="https://www.mediafire.com/file/9kyldf71v4q54gi/Fluxus+v2.654+New.apk/file" 
-               class="block bg-cyan-600 hover:bg-cyan-500 text-center py-2 rounded-lg font-semibold">Download</a>
-            <span class="block bg-gray-700 text-center py-1 rounded-lg">Version V2.652</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Thêm các card tương tự ở đây -->
-
-    </div>
+  <!-- HEADER -->
+  <div class="text-center py-8">
+    <h1 class="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
+      MATSUNE EXECUTOR
+    </h1>
   </div>
 
-  <script>
-    // Search filter
-    const input = document.getElementById('search-input');
-    const cards = document.querySelectorAll('#card-container .bg-gray-800');
+  <!-- FILTER BUTTONS -->
+  <div class="flex flex-wrap justify-center gap-3 mb-6 px-4">
+    <button class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-cyan-600">Android</button>
+    <button class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-cyan-600">iOS</button>
+    <button class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-cyan-600">Lite</button>
+    <button class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-cyan-600">PC</button>
+    <button class="bg-purple-600 px-4 py-2 rounded-full text-sm font-semibold">All</button>
+  </div>
 
-    input.addEventListener('input', () => {
-      const value = input.value.toLowerCase();
-      cards.forEach(card => {
-        const title = card.querySelector('h2').textContent.toLowerCase();
-        card.style.display = title.includes(value) ? 'block' : 'none';
-      });
-    });
-  </script>
+  <!-- CATEGORY TITLE -->
+  <div class="text-center mb-4">
+    <h2 class="text-2xl font-semibold flex items-center justify-center gap-2">
+      <span class="text-white">🤖 Android Executors</span>
+    </h2>
+    <hr class="mt-2 border-gray-700 w-2/3 mx-auto">
+  </div>
+
+  <!-- EXECUTOR CARD -->
+  <div class="max-w-md mx-auto p-4 bg-gray-800 rounded-2xl shadow-lg">
+    <div class="flex justify-between items-center mb-3">
+      <img src="Fluxus.png" alt="Fluxus" class="h-12">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+        <span class="text-green-400 font-semibold text-sm">Working</span>
+      </div>
+    </div>
+
+    <h3 class="text-xl font-bold text-green-300 mb-2">Fluxus Official</h3>
+
+    <div class="flex flex-wrap items-center gap-2 text-sm mb-4">
+      <span class="bg-blue-600 px-3 py-1 rounded-full">2.665</span>
+      <span class="bg-blue-900 px-3 py-1 rounded-full flex items-center gap-1">
+        🔁 Updated: 03/27/2025
+      </span>
+    </div>
+
+    <a href="https://www.mediafire.com/file/9kyldf71v4q54gi/Fluxus+v2.654+New.apk/file" 
+       class="block text-center bg-purple-600 hover:bg-purple-500 py-2 rounded-lg font-semibold">
+      📥 Download
+    </a>
+  </div>
+
 </body>
 </html>
