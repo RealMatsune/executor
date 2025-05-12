@@ -83,17 +83,17 @@ input[type="text"]:focus {
 }
 
 .status1 {
-  color: #00ff88;
+  color: #3fff0a;
   font-weight: bold;
 }
 
 .status2 {
-  color: #ff4b4b;
+  color: #ffa70f;
   font-weight: bold;
 }
 
 .status3 {
-  color: #ffdd00;
+  color: #ff0000;
   font-weight: bold;
 }
 
