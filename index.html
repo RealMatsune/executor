@@ -3,60 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Matsune Executor</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>WOLF TEAM OFFICIAL - Executors</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.png">
 </head>
-<body class="bg-gradient-to-br from-gray-900 to-black text-white min-h-screen font-sans">
+<body>
+  <div class="container">
+    <h1>WOLF TEAM OFFICIAL</h1>
+    <p class="subtext">Danh sách các Executor mới nhất</p>
 
-  <!-- HEADER -->
-  <div class="text-center py-8">
-    <h1 class="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
-      MATSUNE EXECUTOR
-    </h1>
-  </div>
+    <input type="text" placeholder="🔍 Tìm executor...">
 
-  <!-- FILTER BUTTONS -->
-  <div class="flex flex-wrap justify-center gap-3 mb-6 px-4">
-    <button class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-cyan-600">Android</button>
-    <button class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-cyan-600">iOS</button>
-    <button class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-cyan-600">Lite</button>
-    <button class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-cyan-600">PC</button>
-    <button class="bg-purple-600 px-4 py-2 rounded-full text-sm font-semibold">All</button>
-  </div>
-
-  <!-- CATEGORY TITLE -->
-  <div class="text-center mb-4">
-    <h2 class="text-2xl font-semibold flex items-center justify-center gap-2">
-      <span class="text-white">🤖 Android Executors</span>
-    </h2>
-    <hr class="mt-2 border-gray-700 w-2/3 mx-auto">
-  </div>
-
-  <!-- EXECUTOR CARD -->
-  <div class="max-w-md mx-auto p-4 bg-gray-800 rounded-2xl shadow-lg">
-    <div class="flex justify-between items-center mb-3">
-      <img src="Fluxus.png" alt="Fluxus" class="h-12">
-      <div class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-        <span class="text-green-400 font-semibold text-sm">Working</span>
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="fluxus.png" alt="Fluxus Icon">
+        <h2>Fluxus Official</h2>
+        <p class="status1">Đang hoạt động</p>
+        <p>Cập nhật: 03/27/2025</p>
+        <a class="btn download" href="https://www.mediafire.com/file/9kyldf71v4q54gi/Fluxus+v2.654+New.apk/file" target="_blank">📥 Tải xuống</a>
       </div>
+
+      <!-- Card 2 (ví dụ) -->
+      <div class="card">
+        <img src="krnl.png" alt="KRNL Icon">
+        <h2>KRNL Lite</h2>
+        <p class="status2">Bảo trì</p>
+        <p>Cập nhật: 03/22/2025</p>
+        <a class="btn download" href="#">📥 Tải xuống</a>
+      </div>
+
+      <!-- Thêm nhiều card nếu cần -->
     </div>
-
-    <h3 class="text-xl font-bold text-green-300 mb-2">Fluxus Official</h3>
-
-    <div class="flex flex-wrap items-center gap-2 text-sm mb-4">
-      <span class="bg-blue-600 px-3 py-1 rounded-full">2.665</span>
-      <span class="bg-blue-900 px-3 py-1 rounded-full flex items-center gap-1">
-        🔁 Updated: 03/27/2025
-      </span>
-    </div>
-
-    <a href="https://www.mediafire.com/file/9kyldf71v4q54gi/Fluxus+v2.654+New.apk/file" 
-       class="block text-center bg-purple-600 hover:bg-purple-500 py-2 rounded-lg font-semibold">
-      📥 Download
-    </a>
   </div>
-
 </body>
 </html>
